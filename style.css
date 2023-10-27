@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px grey solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.profile{
+    height: 200px;
+    width: 200px;
+    border-radius: 191px;
+    overflow: hidden;
+    background-image: url(asset/E21af6OWEAE8y03.png);
+    background-size: cover;
+    background-position: center;
+    gap: 16px;
+    margin: 20px;
+}
+.noti{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: red;
+    position: absolute;
+    margin: 150px;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+#profile-link{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#profile-link:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.row{
+    display: flex;
+    gap: 0px 20px;
+    margin: 20px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    width: 900px;
+    height: 1000px;
+}
+.gallery .image{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+#extended-col{
+    grid-column: span 2 / span 2;
+    width: 100%;
+}
